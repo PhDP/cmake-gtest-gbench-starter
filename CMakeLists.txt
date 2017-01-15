@@ -26,7 +26,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 find_package(Threads REQUIRED)
 find_package(Boost)
 find_package(Math)
-find_package(CUDA)
+#find_package(CUDA)
 
 include_directories(. include ${Boost_INCLUDE_DIRS})
 

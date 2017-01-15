@@ -6,6 +6,7 @@ support.
 
 # Build
 [![Build Status](https://travis-ci.org/PhDP/cmake-gtest-gbench-starter.svg?branch=master)](https://travis-ci.org/PhDP/cmake-gtest-gbench-starter)
+[![Build status](https://ci.appveyor.com/api/projects/status/9muwt2yj0doodv96?svg=true)](https://ci.appveyor.com/project/PhilippeDesjardinsProulx/cmake-gtest-gbench-starter)
 
 On Linux/Unix, to build and make the test:
 

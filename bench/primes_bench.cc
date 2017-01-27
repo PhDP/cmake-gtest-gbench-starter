@@ -3,7 +3,7 @@
 
 static void BM_CountPrimes(benchmark::State& state) {
   while (state.KeepRunning()) {
-    size_t const n = nemo::count_primes(state.range(0));
+    nemo::count_primes(state.range(0));
   }
 }
 BENCHMARK(BM_CountPrimes)
@@ -14,7 +14,7 @@ BENCHMARK(BM_CountPrimes)
 
 static void BM_CountPrimesWithoutGoto(benchmark::State& state) {
   while (state.KeepRunning()) {
-    size_t const n = nemo::count_primes_no_goto(state.range(0));
+    nemo::count_primes_no_goto(state.range(0));
   }
 }
 BENCHMARK(BM_CountPrimesWithoutGoto)

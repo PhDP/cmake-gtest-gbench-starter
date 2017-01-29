@@ -30,6 +30,7 @@ find_package(Math)
 
 include_directories(. include ${Boost_INCLUDE_DIRS})
 
+# Flags for gcc, clang, intel compilers:
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Intel")
   include(CheckCXXCompilerFlag)
   check_cxx_compiler_flag(-std=c++11 HAVE_FLAG_CXX_11)

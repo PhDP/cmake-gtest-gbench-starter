@@ -4,9 +4,30 @@
 A cross-platform C++11 starter project with google test and google benchmark
 support.
 
+This project template is using git submodule to include Google Benchmark, so
+you need either to do
+
+    $ git clone --recursive git@github.com:PhDP/cmake-gtest-gbench-starter.git
+
+or
+
+    $ git clone git@github.com:PhDP/cmake-gtest-gbench-starter.git
+    $ cd cmake-gtest-gbench-starter
+    $ git submodule init
+    $ git submodule update
+
+# Organization
+
+* **src** has the source files and the CMakeLists.txt to compile the library and executable.
+* **include** has the header files.
+* **test** has the tests and related CMakeLists.txt.
+* **bench** has the benchmarks and related CMakeLists.txt.
+
+The main CMakeLists.txt file at the root of the project has options and further
+documentation.
+
 # Build
 [![Build Status](https://travis-ci.org/PhDP/cmake-gtest-gbench-starter.svg?branch=master)](https://travis-ci.org/PhDP/cmake-gtest-gbench-starter)
-[![Build status](https://ci.appveyor.com/api/projects/status/9muwt2yj0doodv96?svg=true)](https://ci.appveyor.com/project/PhilippeDesjardinsProulx/cmake-gtest-gbench-starter)
 
 On Linux/Unix, to build and make the test:
 

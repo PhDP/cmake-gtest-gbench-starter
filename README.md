@@ -16,6 +16,9 @@ or
     $ git submodule init
     $ git submodule update
 
+The project will compile a library named nemo (of course: you should change the
+name, nemo means 'no one') and an executable named nemo_exe.
+
 # Organization
 
 * **src** has the source files and the CMakeLists.txt to compile the library and executable.
@@ -41,7 +44,12 @@ and benchmarks. The commands
     $ ./test/nemo_tests
     $ ./bench/nemo_benchmark
 
-...will run the tests and benchmarks.
+will run the tests and benchmarks. And
+
+    $ sudo make install
+
+will install (at least on Linux) the library and executable to your computer's
+path.
 
 On Windows, you can use cmake to generate Visual Studio build files with
 the same 'cmake ..' command.

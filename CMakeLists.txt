@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.1)
 project(nemo)
 
 # Set build type to RELEASE by default:
@@ -29,7 +29,7 @@ find_package(Math)
 
 include_directories(. include ${Boost_INCLUDE_DIRS})
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 11) # cmake 3.1 supports '98', '11' or '14'. cmake 3.8 or later support '17'. 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if (Sanitize)

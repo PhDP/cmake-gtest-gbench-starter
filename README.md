@@ -38,11 +38,10 @@ On Linux/Unix, to build and make the test:
     $ cmake ..
     $ make
 
-By default, the makefiles will build the library, executable, tests,
-and benchmarks. The commands
+By default, the makefiles will build the library, executable, tests, and benchmarks. The commands
 
-    $ ./test/nemo_tests
-    $ ./bench/nemo_benchmark
+    $ ./test/test_nemo
+    $ ./bench/bench_nemo
 
 will run the tests and benchmarks. And
 

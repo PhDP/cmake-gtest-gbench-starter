@@ -10,16 +10,16 @@ set(test_src
   primes_test.cc
 )
 
-add_executable(nemo_tests ${test_src})
+add_executable(test_nemo ${test_src})
 
-target_link_libraries(nemo_tests
+target_link_libraries(test_nemo
   gtest
-  nemo
+  ${NEMO_LIB_NAME}
   ${CMAKE_THREAD_LIBS_INIT}
   ${MATH_LIBS}
 )
 
 add_test(
   NAME tests
-  COMMAND nemo_tests
+  COMMAND test_nemo
 )

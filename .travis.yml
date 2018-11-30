@@ -53,6 +53,6 @@ script:
   - mkdir -p build && cd build
   - cmake .. -DCMAKE_BUILD_TYPE=${BUILD} -DBOOST_ROOT="$BOOST"
   - make
-  - ./test/nemo_tests
-  - ./bench/nemo_benchmark
+  - ./test/test_nemo
+  - ./bench/bench_nemo
 

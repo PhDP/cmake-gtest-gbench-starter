@@ -25,9 +25,9 @@ install:
   - sudo apt-get install -qq g++
   - if [ "$CXX" == "clang++" ]; then sudo apt-get install -qq clang libc++-dev libc++abi-dev; fi
   - if [ "$CXX" == "clang++" ]; then export CXX="clang++"; fi
-  - CMAKE_V=3.13.0
+  - CMAKE_V=3.7.1
   - CMAKE_SV=${CMAKE_V::-2}
-  - BOOST_V=1.68.0
+  - BOOST_V=1.62.0
   - # Get and install CMake
   - wget https://cmake.org/files/v${CMAKE_SV}/cmake-${CMAKE_V}.tar.gz
   - tar xf cmake-${CMAKE_V}.tar.gz

@@ -25,21 +25,27 @@ install:
   - sudo apt-get install -qq g++
   - if [ "$CXX" == "clang++" ]; then sudo apt-get install -qq clang libc++-dev libc++abi-dev; fi
   - if [ "$CXX" == "clang++" ]; then export CXX="clang++"; fi
-  - wget https://cmake.org/files/v3.7/cmake-3.7.1.tar.gz
-  - tar xf cmake-3.7.1.tar.gz
-  - cd cmake-3.7.1
+  - CMAKE_V=3.13.0
+  - CMAKE_SV=${CMAKE_V::-2}
+  - BOOST_V=1.68.0
+  - # Get and install CMake
+  - wget https://cmake.org/files/v${CMAKE_SV}/cmake-${CMAKE_V}.tar.gz
+  - tar xf cmake-${CMAKE_V}.tar.gz
+  - cd cmake-${CMAKE_V}
   - ./configure
   - make
   - sudo make install
   - cd ..
+  - # Get and install Boost
   - PROJECT_DIR=`pwd`
   - BOOST=$HOME/boost
-  - git clone --depth 1 -b boost-1.62.0 https://github.com/boostorg/boost.git $BOOST
+  - git clone --depth 1 -b boost-$BOOST_V https://github.com/boostorg/boost.git $BOOST
   - cd $BOOST
   - git submodule update --init --merge
   - ./bootstrap.sh
   - ./b2 headers
   - cd $PROJECT_DIR
+  - export BOOST_ROOT=$BOOST
 
 script:
   - $CXX --version

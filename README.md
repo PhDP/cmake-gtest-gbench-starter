@@ -4,7 +4,7 @@
 A cross-platform C++11 starter project with google test and google benchmark
 support.
 
-This project template is using git submodule to include Google Benchmark, so
+This project template is using git submodule to include Google Benchmark and Google Test so
 you need either to do
 
     $ git clone --recursive git@github.com:PhDP/cmake-gtest-gbench-starter.git
@@ -16,7 +16,7 @@ or
     $ git submodule init
     $ git submodule update
 
-The project will compile a library named nemo (of course: you should change the
+The project compiles a library named nemo (of course: you should change the
 name, nemo means 'no one') and an executable named nemo_exe.
 
 # Organization

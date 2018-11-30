@@ -1,11 +1,12 @@
 # cmake starter with google test and google benchmark
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-A cross-platform C++11 starter project with google test and google benchmark
+A cross-platform C++11 starter project with google test and google benchmark support. [See this
+project](https://github.com/PhDP/cuda-cmake-gtest-gbench-starter) for a similar template with CUDA
 support.
 
-This project template is using git submodule to include Google Benchmark and Google Test so
-you need either to do
+This project template is using git submodule to include Google Benchmark and Google Test so you
+need either to do
 
     $ git clone --recursive git@github.com:PhDP/cmake-gtest-gbench-starter.git
 
@@ -16,8 +17,8 @@ or
     $ git submodule init
     $ git submodule update
 
-The project compiles a library named nemo (of course: you should change the
-name, nemo means 'no one') and an executable named nemo_exe.
+The project compiles a library named nemo (of course: you should change the name, nemo means 'no
+one') and an executable named nemo_exe.
 
 # Organization
 
@@ -26,8 +27,7 @@ name, nemo means 'no one') and an executable named nemo_exe.
 * **test** has the tests and related CMakeLists.txt.
 * **bench** has the benchmarks and related CMakeLists.txt.
 
-The main CMakeLists.txt file at the root of the project has options and further
-documentation.
+The main CMakeLists.txt file at the root of the project has options and further documentation.
 
 # Build
 [![Build Status](https://travis-ci.org/PhDP/cmake-gtest-gbench-starter.svg?branch=master)](https://travis-ci.org/PhDP/cmake-gtest-gbench-starter)

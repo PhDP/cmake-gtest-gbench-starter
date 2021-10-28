@@ -16,7 +16,7 @@ target_link_libraries(test_nemo
   gtest
   ${NEMO_LIB_NAME}
   ${CMAKE_THREAD_LIBS_INIT}
-  ${MATH_LIBS}
+  ${MATH_LIBRARIES}
 )
 
 add_test(
